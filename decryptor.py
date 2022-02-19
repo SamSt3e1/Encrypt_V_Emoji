@@ -23,7 +23,7 @@ def frot13(emoji):
     trans = words[13:]+words[:13]
     rot_char = lambda c: trans[emojis.find(c)] if emojis.find(c)>-1 else c
     return ''.join( rot_char(c) for c in word )
-word = input("emojini daxil edin: ")
+word = input("Insert encrypted emoji here: ")
 emoji = convertText(word)
 reEmoji = convertText(word)
 rot13 = frot13(word)
